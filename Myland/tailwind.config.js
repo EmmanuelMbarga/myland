@@ -12,6 +12,8 @@ export default {
     },
     fontFamily:{
       Poppins:['Poppins', 'sans-serif'],
+      inter:['Inter','sans-serif'],
+      DancingScript:["Dancing Script","sans-serif"]
     }
   },
   plugins: [],

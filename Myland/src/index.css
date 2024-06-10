@@ -2,15 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    @apply p-0 m-0 font-Poppins
+/* ------------------------------------------------------section body------------------------------------------------------ */
+body {
+  @apply p-0 m-0 font-Poppins box-border bg-gray-50;
 }
-.openBurgerMenu{
-    @apply max-w-[1000px] m-auto bg-blue-600 max-h-[500vh] absolute left-0 translate-x-0 top-0 bg-opacity-75 backdrop-blur-sm
+
+.containerApp{
+  @apply max-w-[1500px] m-auto
 }
-.closeBurgerMenu{
-    @apply left-0 translate-x-[-500px] m-auto bg-blue-600  max-w-[1000px] max-h-[500vh] absolute bg-opacity-10 top-0 backdrop-blur-sm
+
+/* ---------------------------------------------------sercition MenuBurger--------------------------------------------------- */
+.openBurgerMenu {
+  @apply max-w-[1000px] m-auto bg-black max-h-[500vh] absolute left-0 translate-x-0 top-0 bg-opacity-75 backdrop-blur-sm MiniPortable:max-w-[212px] MiniPortable:fixed MiniPortable:z-50 mobil:max-w-[350px]  mobil:fixed mobil:z-50 Tablette:fixed Tablette:z-50;
 }
-.sousMenu{
-    @apply text-4xl my-4 border-b px-20 pb-8 uppercase
+.closeBurgerMenu {
+  @apply left-0 translate-x-[-500px] m-auto bg-blue-600  max-w-[1000px] max-h-[500vh] absolute bg-opacity-10 top-0 backdrop-blur-sm MiniPortable:max-w-[212px] MiniPortable:fixed MiniPortable:z-50 mobil:max-w-[350px] mobil:fixed mobil:z-50 Tablette:fixed Tablette:z-50;
+}
+
+/*  */
+.sousMenu {
+  @apply text-4xl text-neutral-100 my-4 border-b px-20 pb-8 uppercase MiniPortable:text-lg MiniPortable:px-12 mobil:text-lg Tablette:text-3xl;
+}
+/* -------------------------------------------------------section-Card-Navigation------------------------------------------------------- */
+.cardNavigation {
+  @apply bg-white max-w-[600px] shadow-lg hover:scale-110 hover:relative hover:z-50 hover:shadow-2xl flex items-center p-8 hover:rounded-md cursor-pointer Laptop:hover:scale-90  MiniPortable:hover:scale-90 mobil:hover:scale-90 hover:text-white hover:bg-blue-600;
+}
+
+.cardNavigationText {
+  @apply uppercase text-xs text-center font-bold mt-2 m-auto;
+}
+
+/* ------------------------------------------------------slider------------------------------------------------------ */
+/* style-button-slider */
+.sliderButtonOn{
+  @apply w-6 h-6 border-double shadow-lg bg-orange-400 rounded-full mt-4 m-auto
+}
+.sliderButtonOff{
+  @apply w-6 h-6 border-double shadow-lg bg-gray-400 rounded-full mt-4 m-auto
+}
+/* style-slider */
+.sliderStyle1{
+  @apply w-80 h-80 object-cover Tablette:w-40 Tablette:h-40 mobil:w-36 MiniPortable:w-28
+}
+.sliderStyle2{
+  @apply w-80 h-80 object-cover z-50 -ml-72 -mt-10 Tablette:w-40 Tablette:h-40 Tablette:-ml-32 Tablette:-mt-4  mobil:w-36 mobil:-ml-20 MiniPortable:w-28 MiniPortable:-ml-20  MiniPortable:mt-5
+}
+.sliderStyle3{
+  @apply w-80 h-80 object-cover  z-50 -ml-64 mt-7 Tablette:w-40 Tablette:h-40 Tablette:-ml-32 Tablette:mt-4 mobil:w-36 mobil:-ml-20 MiniPortable:w-28 MiniPortable:-ml-20 MiniPortable:-mt-6
+}
+
+/* style-title-slide */
+
+.sliderTitleStyle{
+  @apply text-center mobil:text-sm MiniPortable:text-[8px]
+}
+
+
+/* -------------------------------------------------cards PUB------------------------------------------------- */
+
+.cardspub{
+  @apply border p-4 z-50
 }

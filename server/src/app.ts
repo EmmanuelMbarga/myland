@@ -3,11 +3,13 @@ import { PORT } from "./config";
 import "./../dist/config/Bd";
 import { route } from "./routes/user";
 import cors from "cors";
+import { routes1 } from "./routes/article1";
 
 // import cookieParser from "cookie-parser";
 
 const app = express();
 const routeUser = route;
+const routerArticle=routes1
 
 //cors options
 app.use(
@@ -25,6 +27,7 @@ app.use(json());
 
 //routes API
 app.use("/api/v1/user", routeUser);
+app.use("/api/v2/article", routerArticle);
 
 // Serve static files from the "public" directory
 app.use(express.static("public"));

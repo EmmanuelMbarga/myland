@@ -5,3 +5,7 @@
 .closeBurgerMenu{
   transition: 0.8s ease-in-out;
 }
+.cardNavigation{
+  transition: 0.5s ease;
+}
+

@@ -1,3 +1,4 @@
+// import { localhost } from "../../url";
 import HeaderLogo from "./Headerlogo";
 import HeaderNavbar from "./Headernavbar";
 import HearderBTN from "./Hearderbtn";
@@ -42,8 +43,8 @@ const map = (
 
 export default function Header() {
   return (
-    <header className="bg-[url(http://localhost:4091/images/LogoEntreprise2.jpg)] bg-no-repeat bg-cover max-w-[1500px] m-auto border bg-gray-500 pt-6 screenLarge:max-w-[1500px] screenLarge:m-auto Laptop:max-w-[1500px] Laptop:m-auto Tablette:max-w-[1500px] Tablette:m-auto mobil:max-w-[700px] mobil:m-auto MiniPortable:max-w-[500px] MiniPortable:m-auto">
-      <div className="flex justify-around Tablette:border-b Tablette:pb-2 mobil:flex-row-reverse mobil:mx-3 MiniPortable:flex-col">
+    <header className="bg-[url(http://localhost:4091/images/LogoEntreprise2.jpg)] bg-no-repeat bg-cover border  pt-2 screenLarge:max-w-[1500px] screenLarge:m-auto Laptop:max-w-[1500px] Laptop:m-auto Tablette:max-w-[1500px] Tablette:m-auto mobil:max-w-[700px] mobil:m-auto MiniPortable:max-w-[500px] MiniPortable:m-auto ">
+      <div className=" flex justify-around Tablette:border-b Tablette:pb-2 mobil:flex-row-reverse mobil:justify-between mobil:mx-3 MiniPortable:flex-col">
         <HeaderLogo />
         <div className="flex Tablette:hidden mobil:hidden MiniPortable:hidden">
           <Contact
@@ -65,8 +66,8 @@ export default function Header() {
       <HeaderNavbar />
 
       <div className="uppercase font-bold text-center my-40">
-        <p className="text-sm text-white">ships anything</p>
-        <p className="text-3xl text-white">around the world</p>
+        <p className="text-lg text-blue-500">ships anything</p>
+        <p className="text-4xl text-orange-400">around the world</p>
         <button className="border uppercase px-6 py-1 rounded-3xl my-4 text-sm text-blue-500 bg-white">
           go it {">"}
         </button>
